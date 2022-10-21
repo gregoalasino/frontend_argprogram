@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    color: #C6DFDD;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #2D334D;
+}
+h1{
+    color: #648EAA;
+}
