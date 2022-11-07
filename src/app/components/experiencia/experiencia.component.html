@@ -1,12 +1,27 @@
 <div class="row">
     <h1>Experiencia Laboral</h1>
-    <div class="col-lg-12">
-        <ul>
-            <li>
-                <h2>Trabajo 1</h2> - <h3>(2020-tday)</h3>
-            </li>
-            <h5>BOTANICOS BOUQUET</h5>
-            <h6>Empresa familiar destinada a la comercialización de acompañamientos para bebidas alcoholicas. Encargado de ventas y renovación de Stock. Por voluntad propia decidí crear páginas (WordPress) para ampliar el mercado digital. Últimamente, a través de Python, logré una eficiencia en el registro y cálculo de ventas parciales y totales, así también como sueldos y porcentajes de ganancia. El proyecto consiste en tomar un archivo con x cantidad de datos, leerlos y realizar las operaciones lógicas. Al finalizar, muestra por pantalla lo que el usuario decida en un menu de opciones que se presenta al iniciar el programa.</h6>
-        </ul>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-info" routerLink="/nuevaexp" *ngIf="isLogged">
+            Nueva Experiencia
+        </button>
     </div>
+
+
+    <div class="col-lg-12">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <td>{{Experiencia.nombreE}}</td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td *ngIf="isLogged"><button type="button" class="btn btn-light"
+                            routerLink="/editexp/{{Experiencia.id}}">EDITAR</button></td>
+                    <td *ngIf="isLogged"><button type="button" class="btn btn-danger"
+                            (click)="delete(Experiencia.id)">BORRAR</button>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
 </div>
+
