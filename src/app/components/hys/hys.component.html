@@ -7,8 +7,8 @@
 
     <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
         <circle-progress 
-            [percent]="(skill.porcentaje)" 
-            [radius]="100" [title]="(skill.nombre)"
+            [percent]="skill.porcentaje" 
+            [radius]="100" [title]="skill.nombre"
             [titleFontSize]="'1.5em'" 
             [imageSrc]="''" 
             [showImage]="false" 
@@ -25,6 +25,104 @@
             [animation]="true" 
             [animationDuration]="750">
         </circle-progress>
+        <div>
+            <circle-progress 
+            [percent]="70" 
+            [radius]="100" [title]="''"
+            [titleFontSize]="'1.5em'" 
+            [imageSrc]="'../../../assets/html.png'" 
+            [showImage]="true" 
+            [showTitle]="false"
+            [showSubtitle]="false"
+            [titleColor]="'white'"
+            [imageHeight]="80" 
+            [imageWidth]="80"
+            [showUnits]="false" 
+            [outerStrokeWidth]="14" 
+            [innerStrokeWidth]="5" 
+            [outerStrokeColor]="'darkorange'"
+            [innerStrokeColor]="'darkorange'" 
+            [animation]="true" 
+            [animationDuration]="750">
+        </circle-progress>
+        <circle-progress 
+            [percent]="70" 
+            [radius]="100" [title]="''"
+            [titleFontSize]="'1.5em'" 
+            [imageSrc]="'../../../assets/css-logo.webp'" 
+            [showImage]="true" 
+            [showTitle]="false"
+            [showSubtitle]="false"
+            [titleColor]="'white'"
+            [imageHeight]="80" 
+            [imageWidth]="80"
+            [showUnits]="false" 
+            [outerStrokeWidth]="14" 
+            [innerStrokeWidth]="5" 
+            [outerStrokeColor]="'blue'"
+            [innerStrokeColor]="'blue'" 
+            [animation]="true" 
+            [animationDuration]="750">
+        </circle-progress>
+        <circle-progress 
+            [percent]="70" 
+            [radius]="100" [title]="''"
+            [titleFontSize]="'1.5em'" 
+            [imageSrc]="'../../../assets/js.png'" 
+            [showImage]="true" 
+            [showTitle]="false"
+            [showSubtitle]="false"
+            [titleColor]="'white'"
+            [imageHeight]="90" 
+            [imageWidth]="90"
+            [showUnits]="false" 
+            [outerStrokeWidth]="14" 
+            [innerStrokeWidth]="5" 
+            [outerStrokeColor]="'yellow'"
+            [innerStrokeColor]="'yellow'" 
+            [animation]="true" 
+            [animationDuration]="750">
+        </circle-progress>
+        <circle-progress 
+            [percent]="70" 
+            [radius]="100" [title]="''"
+            [titleFontSize]="'1.5em'" 
+            [imageSrc]="'../../../assets/python.png'" 
+            [showImage]="true" 
+            [showTitle]="false"
+            [showSubtitle]="false"
+            [titleColor]="'white'"
+            [imageHeight]="80" 
+            [imageWidth]="80"
+            [showUnits]="false" 
+            [outerStrokeWidth]="14" 
+            [innerStrokeWidth]="5" 
+            [outerStrokeColor]="'green'"
+            [innerStrokeColor]="'green'" 
+            [animation]="true" 
+            [animationDuration]="750">
+        </circle-progress>
+        <circle-progress 
+            [percent]="70" 
+            [radius]="100" [title]="''"
+            [titleFontSize]="'1.5em'" 
+            [imageSrc]="'../../../assets/angular-icon.png'" 
+            [showImage]="true" 
+            [showTitle]="false"
+            [showSubtitle]="false"
+            [titleColor]="'white'"
+            [imageHeight]="80" 
+            [imageWidth]="80"
+            [showUnits]="false" 
+            [outerStrokeWidth]="14" 
+            [innerStrokeWidth]="5" 
+            [outerStrokeColor]="'red'"
+            [innerStrokeColor]="'red'" 
+            [animation]="true" 
+            [animationDuration]="750">
+        </circle-progress>
+        </div>
+        
         
         <div>
             <td *ngIf="isLogged">

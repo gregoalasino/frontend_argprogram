@@ -1,6 +1,11 @@
 <div class="row">
+    
+        <button type="button" class="btn btn-primary" routerLink="/editacercade/id" *ngIf="isLogged">
+            Editar Persona
+        </button>
+    
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/me.jpeg" style="border-radius: 5%; margin-left: 0.4em;" class="img-fluid" id="fotodeperfil">
+        <img src={{persona.img}} style="border-radius: 5%; margin-left: 0.4em;" class="img-fluid" id="fotodeperfil">
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" id="ptm">
         <h3 id="nombre">{{persona.nombre}} {{persona.apellido}}</h3>
@@ -9,7 +14,7 @@
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" id="ptm">
         <span>
             <h1 id="ofme">Acerca de mi</h1>
-            <h5 id="lorem">En el año 2020 decidí iniciarme en el mundo de la programación. Desde entonces mis ganas de aprender y formarme solo incrementan! Terminando el proyecto de Argentina Programa me siento en condiciones de arrancar una etapa más profesional donde buscaré formar grandes hábitos y grupos de trabajo.</h5>
+            <h5> {{persona.descripcion}}</h5>
         </span>
     </div>
 </div>
