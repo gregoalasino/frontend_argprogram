@@ -1,9 +1,9 @@
-export class Persona{
+export class persona{
     id?: number;
-    nombre: String;
-    apellido: String;
+    nombre: string;
+    apellido: string;
     descripcion: string;
-    img: String;
+    img: string;
 
     constructor(nombre: string, apellido: string, descripcion: string, img: string){
         this.nombre = nombre;
