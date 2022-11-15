@@ -9,12 +9,20 @@
     display: inline-block;
     text-align: justify;
 }
-.parte2{
-    justify-content: left;
+.h2{
+    padding: -25px;
 }
-.img-proyecto {
-    margin-top: -240px;
+.parte2{
+    margin-top: -185px;
     display: auto;
     margin-left: 1230px;
     box-shadow: 10px 10px 30px #648EAA;
-  }
+    justify-content: left;
+}
+
+.parte3{
+    margin-top: -280px;
+    display: auto;
+    margin-left: 1230px;
+    box-shadow: 10px 10px 30px #648EAA;
+}
