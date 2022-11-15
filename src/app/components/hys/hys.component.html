@@ -1,13 +1,9 @@
 <div class="row">
 
     <h1 style="text-align: center;">Hard&Soft Skills</h1>
-    <div class="col-lg-2">
-        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
-    </div>
-
-        <div class="col-sm-4 col-md-4 col-lg-4">
-            <circle-progress 
-            [percent]="70" 
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress 
+            [percent]="65" 
             [radius]="100" [title]="''"
             [titleFontSize]="'1.5em'" 
             [imageSrc]="'../../../assets/html.png'" 
@@ -25,8 +21,10 @@
             [animation]="true" 
             [animationDuration]="750">
         </circle-progress>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
         <circle-progress 
-            [percent]="70" 
+            [percent]="65" 
             [radius]="100" [title]="''"
             [titleFontSize]="'1.5em'" 
             [imageSrc]="'../../../assets/css-logo.webp'" 
@@ -44,8 +42,10 @@
             [animation]="true" 
             [animationDuration]="750">
         </circle-progress>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
         <circle-progress 
-            [percent]="70" 
+            [percent]="50" 
             [radius]="100" [title]="''"
             [titleFontSize]="'1.5em'" 
             [imageSrc]="'../../../assets/js.png'" 
@@ -53,8 +53,8 @@
             [showTitle]="false"
             [showSubtitle]="false"
             [titleColor]="'white'"
-            [imageHeight]="90" 
-            [imageWidth]="90"
+            [imageHeight]="80" 
+            [imageWidth]="150"
             [showUnits]="false" 
             [outerStrokeWidth]="14" 
             [innerStrokeWidth]="5" 
@@ -63,8 +63,10 @@
             [animation]="true" 
             [animationDuration]="750">
         </circle-progress>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
         <circle-progress 
-            [percent]="70" 
+            [percent]="40" 
             [radius]="100" [title]="''"
             [titleFontSize]="'1.5em'" 
             [imageSrc]="'../../../assets/python.png'" 
@@ -82,8 +84,10 @@
             [animation]="true" 
             [animationDuration]="750">
         </circle-progress>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4"> 
         <circle-progress 
-            [percent]="70" 
+            [percent]="52" 
             [radius]="100" [title]="''"
             [titleFontSize]="'1.5em'" 
             [imageSrc]="'../../../assets/angular-icon.png'" 
@@ -101,7 +105,10 @@
             [animation]="true" 
             [animationDuration]="750">
         </circle-progress>
-        </div>
+    </div>
+    <div class="col-lg-2">
+        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+    </div>
         <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
             <circle-progress 
                 [percent]="skill.porcentaje" 
@@ -123,7 +130,7 @@
                 [animationDuration]="750">
             </circle-progress>
         
-        
+
         <div>
             <td *ngIf="isLogged">
                 <button type="button" class="btn btn-light"

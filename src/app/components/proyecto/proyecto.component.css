@@ -1,6 +1,20 @@
 .row{
-    padding: 15px;
+    padding: 20px;
+    
 }
-h1, h2{
-    margin-top: 2%;
+.contenedor{
+    width: auto;
 }
+.parte1{
+    display: inline-block;
+    text-align: justify;
+}
+.parte2{
+    justify-content: left;
+}
+.img-proyecto {
+    margin-top: -240px;
+    display: auto;
+    margin-left: 1230px;
+    box-shadow: 10px 10px 30px #648EAA;
+  }
