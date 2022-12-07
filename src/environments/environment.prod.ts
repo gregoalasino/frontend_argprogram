@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '841817981633',
   },
   production: true,
-  URL: 'https://backendgregoalasino.herokuapp.com/'
+  URL: 'http://portfolio-web-gregoalasino.koyeb.app/'
 };
